@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Path Converter</title>
+  <script src="index.js"></script>
+</head>
+<body>
+  <h2>Convert File Path</h2>
+  <label for="pathInput">Enter file path:</label>
+  <input type="text" id="pathInput" placeholder="e.g. path/to/file" style="width: 300px;">
+  
+  <br><br>
+  <label>
+    <input type="radio" name="direction" value="toBackslash" checked> Convert to backslashes (\)
+  </label>
+  <label>
+    <input type="radio" name="direction" value="toForwardslash"> Convert to forward slashes (/)
+  </label>
+
+  <br><br>
+  <button onclick="convertPath()">Convert</button>
+
+  <h3>Converted Path:</h3>
+  <p id="output" style="font-family: monospace;"></p>
+
+</body>
+</html>
